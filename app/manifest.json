@@ -1,0 +1,18 @@
+{
+  "name": "LetsGitGoing",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Extension for increasing developer productivity that links into GitHub",
+  "browser_action": {
+    "scripts": ["scripts/background/background.js"],
+    "persistent": false,
+    "default_icon": "frontend/images/icon.png",
+    "default_popup": "frontend/popup.html"
+  },
+  "content_scripts": [],
+  //John: I don't know if we need activeTab permissions, but I would think we will need storage or local storage permissions
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+}
